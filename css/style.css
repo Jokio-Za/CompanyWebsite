@@ -1,0 +1,36 @@
+*{
+    margin:0 auto;
+}
+body{
+    position:relative;
+}
+::selection {
+    background: #e73131; /* WebKit/Blink Browsers */
+    color:#fff;
+}
+::-webkit-selection {
+   background-color: #e73131;
+   color: #FFF;
+}
+::-ms-selection {
+   background-color: #e73131;
+   color: #FFF;
+}
+::-o-selection {
+   background-color: #e73131;
+   color: #FFF;
+}
+::-moz-selection {
+   background-color: #e73131;
+   color: #FFF;
+}
+#menu {
+	position:absolute;
+}
+
+.nav-item {
+    background-color:#e73131;
+}
+.nav-link{
+    color:#fff;
+}
