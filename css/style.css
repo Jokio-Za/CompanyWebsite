@@ -1,8 +1,26 @@
 *{
     margin:0 auto;
 }
+/* config font */
+@font-face {
+    font-family: 'helvetica_ce_55_romanregular';
+    src: url('./fonts/helvetica_neue_ce_55_roman-webfont.eot');
+    src: url('./fonts/helvetica_neue_ce_55_roman-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/helvetica_neue_ce_55_roman-webfont.woff2') format('woff2'), url('./fonts/helvetica_neue_ce_55_roman-webfont.woff') format('woff'), url('./fonts/helvetica_neue_ce_55_roman-webfont.ttf') format('truetype'), url('./fonts/helvetica_neue_ce_55_roman-webfont.svg#helvetica_ce_55_romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('./fonts/opensans-regular-webfont.eot');
+    src: url('./fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/opensans-regular-webfont.woff2') format('woff2'), url('./fonts/opensans-regular-webfont.woff') format('woff'), url('./fonts/opensans-regular-webfont.ttf') format('truetype'), url('./fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     position:relative;
+    font-family: 'helvetica_ce_55_romanregular';
 }
 ::selection {
     background: #e73131; /* WebKit/Blink Browsers */
@@ -31,6 +49,82 @@ body{
 .nav-item {
     background-color:none;
 }
-.nav-link{
+.nav-link {
     color:#e73131;
+    font-size:20px;
 }
+
+
+#contact{
+    text-align: center;
+    position:relative;
+    top:30px;
+
+}
+
+#contact ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+
+.bi.bi-facebook{
+    color :#726f6f70;
+    font-size: 50px;
+}
+.bi.bi-facebook:hover{
+    color:#0b6efd;
+}
+
+.bi.bi-envelope-fill{
+    color :#726f6f70;
+    font-size: 50px;
+}
+.bi.bi-envelope-fill:hover{
+    color:#0b6efd;
+   
+}
+
+
+/* Animation follow us*/
+@-webkit-keyframes hvr-pulse {
+    25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+   }
+    75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+   }
+}
+   @keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+   }
+   .hvr-pulse {
+       display: inline-block;
+       vertical-align: middle;
+       -webkit-transform: translateZ(0);
+       transform: translateZ(0);
+       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+       -webkit-backface-visibility: hidden;
+       backface-visibility: hidden;
+       -moz-osx-font-smoothing: grayscale;
+   }
+   .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+       -webkit-animation-name: hvr-pulse;
+       animation-name: hvr-pulse;
+       -webkit-animation-duration: 1s;
+       animation-duration: 1s;
+       -webkit-animation-timing-function: linear;
+       animation-timing-function: linear;
+       -webkit-animation-iteration-count: infinite;
+       animation-iteration-count: infinite;
+   }
