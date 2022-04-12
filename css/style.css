@@ -29,8 +29,8 @@ body{
 }
 
 .nav-item {
-    background-color:#e73131;
+    background-color:none;
 }
 .nav-link{
-    color:#fff;
+    color:#e73131;
 }
