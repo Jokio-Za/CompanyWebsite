@@ -121,9 +121,19 @@ p {
     margin-right:20%;
 }
 .bi.bi-bar-chart-line{
-    font-size: 40px;
+    font-size: 25px;
    
 }
+.bi.bi-wifi{
+    font-size: 25px;
+}
+.bi.bi-terminal-fill{
+    font-size: 25px;
+}
+.bi.bi-wrench{
+    font-size: 25px;
+}
+
 .icon-border{
     border:2px;
     border-style: solid;
@@ -141,26 +151,20 @@ p {
 .icon-border:hover{
     background-color: #e73131;
     animation-name: flip-coin;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
     color:#fff;
 }
-.container-sm{
-    display:flex;
+.pack-card{
+    display: flex;
 }
+
 .icon-content{
     margin:0%;
 }
 .icon-content p{
     text-align: left;
     margin:0%
-}
-
-.bi.bi-bar-chart-line{
-    vertical-align: center;
-    text-align: center;
-    justify-content: center;
 }
 
 .bi.bi-facebook{
@@ -230,7 +234,7 @@ p {
    }
 }
     @keyframes flip-coin {
-        50% {   
+    50% {   
             -webkit-transform: rotatex(180deg);
             transform: rotatex(180deg);
        }
