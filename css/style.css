@@ -45,7 +45,10 @@ body{
 #menu {
 	position:absolute;
 }
-
+.navbar-brand {
+    text-align: left;
+    margin-left:0%;
+}
 .nav-item {
     background-color:none;
 }
